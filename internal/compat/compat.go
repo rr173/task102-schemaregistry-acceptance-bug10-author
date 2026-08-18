@@ -248,7 +248,7 @@ func sortedCommon(a, b map[string]*schema.Field) []string {
 			out = append(out, name)
 		}
 	}
-	sort.Sort(sort.Reverse(sort.StringSlice(out)))
+	sort.Strings(out)
 	return out
 }
 
